@@ -2,12 +2,13 @@ html {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: auto;
+  width: 100vw;
   display: grid;
   grid-template-areas: 
   ". header ."
   ". main ."
   ". footer .";
+ background-image:url(https://www.bypeople.com/wp-content/uploads/2014/05/light-live-background-css.jpg);
 }
 
 
@@ -73,7 +74,7 @@ h1{
 
 
 #image {
-  width: 60%;
+  max-width: 60%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 7px 7px rgba(0,0,0,0.23);
   border-color: rgb(163, 163, 163);
   border-radius: 10px;
@@ -84,7 +85,7 @@ h1{
 }
 
 body {
-  background-color: rgba(198, 242, 248, 0.439);
+  background-color: rgba(115, 255, 225, 0.068);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -116,91 +117,94 @@ h3 {
   text-indent: -10px;
 }
 
-#earlyyears {
-  padding-top: 20px;
-  grid-area: main;
-  
-}
   
 
-.teslahome {
+.sectionimg {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  width: 339px;
+  width: 340px;
   border-color: slategrey;
   border-radius: 10px;
   border-width: 3px;
   border-style:ridge;
-  font-size: 15px;
   margin: auto;
-}
-#teslahome{
-  width: 339px;
+  text-indent: -4px;
+  background-color: rgb(240, 236, 230);
 }
 
-#teslahome:hover {
+.sectionimgcaption {
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.sectionimg:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-color: slategrey;
   border-radius: 10px;
   border-width: 3px;
   border-style:ridge;
-  transform: scale(1.2);
-
+  transform: scale(1.1);
 }
 
-#earlyyearstext {
+.sectiontext {
+  margin: auto;
+  max-width: 600px;
   text-indent: 20px;
   text-align: justify;
-  width: inherit;
-  margin: auto;
+  margin-bottom: 60px;
 }
 
 
-#education {
-  text-align: justify;
-  text-indent: 20px;
-  width: 540px;
-  margin: auto;
-}
-
-#work {
-  text-align: justify;
-  text-indent: 20px;
-  width: 540px;
-  margin: auto;
-}
 .more {display: none;}
 
-.myBtn {
+.read {
+  position: relative;
+  margin: auto;
   background-color: rgba(84, 207, 238, 0.377);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-color: slategrey;
   border-radius: 7px;
   border-width: 3px;
   border-style:ridge;
+  margin-left: 69px;
+  margin-top: 50px;
 }
 
-#lateryears {
-  text-align: justify;
-  text-indent: 20px;
-  width: 540px;
-  margin: auto;
+.read:hover {
+  animation-name: readhover;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 
-#death {
-  text-align: justify;
-  text-indent: 20px;
-  width: 540px;
-  margin: auto;
+@keyframes readhover{
+  100% {
+    background: linear-gradient(34deg, rgb(252, 218, 155),rgb(98, 241, 230));
+  }
 }
-@media (max-width: 800px) {
+
+#tribute-link:hover {
+    color: rgb(255, 94, 0);
+}
+
+footer{
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.24), rgba(255, 255, 255, 0.158), rgba(0, 0, 0, 0.24));
+  grid-area: footer;
+  padding: 3px;
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
   section {
     font-size: 15px;
+    line-height: 24px;
   }
   p {
-    width: 400px;
+    width: 339px;
     margin: auto;
   }
   #image {
-    width: 90%;
+    max-width: 95%;
+    height: auto;
   }
 }

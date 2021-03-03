@@ -8,23 +8,7 @@
   <title>Nikola Tesla</title>
   <meta name="description" content="The Greatest Inventor">
   <link rel="stylesheet" href="style.css">
-  <script>
-    function myFunction() {
-      var dots = document.getElementsByClassName("dots");
-      var moreText = document.getElementsByClassName("more");
-      var btnText = document.getElementsByClassName("myBtn");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <header>
   <div id="h1strip">
@@ -37,7 +21,7 @@
 
   <div id="img-div">
     <img src="https://wallsdesk.com/wp-content/uploads/2016/11/Nikola-Tesla-Images.jpg" id="image"
-      alt="sketch image of Nikola Tesla">
+      alt="image of Nikola Tesla">
     <p id="img-caption">"The present is theirs; the future, for which I really worked, is mine." -Nikola Tesla</p>
   </div>
 
@@ -45,7 +29,7 @@
     <h2 id="tribute-info">Biography:</h2>
   </div>
 
-  <section id="earlyyears">
+  <section class="sectiontext">
 
 
     <p id="earlyyearstext">
@@ -58,16 +42,16 @@
       craft tools and mechanical appliances and the ability to memorize Serbian epic poems. Tesla credited his eidetic
       memory and creative abilities to his mother's genetics and influence.</p>
 
-    <div class="teslahome">
+    <div class="sectionimg">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Nikola_Tesla_Memorial_Center.JPG/640px-Nikola_Tesla_Memorial_Center.JPG"
-        id="teslahome" alt="Image showing Tesla's house in Smiljan(now in Crotia)">
-      <p>Image showing Tesla's house in Smiljan(now in Crotia)</p>
+        class="sectionimg" alt="Image showing Tesla's house in Smiljan(now in Crotia)">
+      <p class="sectionimgcaption">Tesla's house(Parish hall) in Smiljan (now in Crotia)</p>
     </div>
 
   </section>
 
-  <section id="education">
+  <section class="sectiontext">
     <h3>Education</h3>
     <p> Tesla attended primary school in Smiljan. He studied German, arithmetic, and religion. In 1862, family move to
       the nearby Gospic, where his father worked as a parish priest. Nikola completed primary and middle school here.
@@ -107,12 +91,12 @@
         college.
       </p>
     </span>
-    <button onclick="myFunction()" class="myBtn">Read more</button>
+    <button class="read">Read more</button>
 
 
   </section>
 
-  <section id="work">
+  <section class="sectiontext">
 
     <h3>Work</h3>
     <p>Later, at Budapest, he visualized the principle of the rotating magnetic field and developed plans for
@@ -147,7 +131,11 @@
 
       <p>In 1898 Tesla announced his invention of a teleautomatic boat guided by remote control. When skepticism was
         voiced, Tesla proved his claims for it before a crowd in Madison Square Garden.</p>
-
+      <div class="sectionimg"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tesla_Colorado.jpg/476px-Tesla_Colorado.jpg"
+          class="sectionimg" alt="Image showing Tesla's Lab in Colorado Springs">
+        <p class="sectionimgcaption">Tesla's Lab in Colorado Springs</p>
+      </div>
       <p>In Colorado Springs, Colorado, where he stayed from May 1899 until early 1900, Tesla made what he regarded as
         his
         most important discovery—terrestrial stationary waves. By this discovery he proved that Earth could be used as a
@@ -156,6 +144,13 @@
         At
         one time he was certain he had received signals from another planet in his Colorado laboratory, a claim that was
         met with derision in some scientific journals.</p>
+      <div class="sectionimg">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Nikola_Tesla%2C_with_his_equipment_Wellcome_M0014782.jpg/794px-Nikola_Tesla%2C_with_his_equipment_Wellcome_M0014782.jpg"
+          class="sectionimg" alt="image showing Tesla sitting next to his Magnifying transmitter">
+        <p class="sectionimgcaption">Tesla sitting next to his "Magnifying transmitter"</p>
+      </div>
+
 
       <p>Returning to New York in 1900, Tesla began construction on Long Island of a wireless world broadcasting tower,
         with $150,000 capital from the American financier J. Pierpont Morgan. Tesla claimed he secured the loan by
@@ -164,17 +159,26 @@
         communication and to furnish facilities for sending pictures, messages, weather warnings, and stock reports. The
         project was abandoned because of a financial panic, labour troubles, and Morgan’s withdrawal of support. It was
         Tesla’s greatest defeat.</p>
+      <div class="sectionimg"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Tesla_Broadcast_Tower_1904.jpeg" class="sectionimg"
+          alt="Image showing Tesla's Wardenclyffe plant on Long Island in 1904.">
+        <p class="sectionimgcaption">Tesla's Wardenclyffe plant on Long Island in 1904</p>
+      </div>
 
       <p>Tesla’s work then shifted to turbines and other projects. Because of a lack of funds, his ideas remained in his
         notebooks, which are still examined by enthusiasts for unexploited clues. In 1915 he was severely disappointed
         when a report that he and Edison were to share the Nobel Prize proved erroneous. Tesla was the recipient of the
         Edison Medal in 1917, the highest honour that the American Institute of Electrical Engineers could bestow.</p>
+      <div class="sectionimg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/TeslaTurbineOriginal.png"
+          class="sectionimg" alt="image showing Tesla's Bladeless Turbine">
+        <p class="sectionimgcaption">Tesla's Bladeless Turbine</p>
+      </div>
     </span>
-    <button onclick="myFunction()" class="myBtn">Read more</button>
+    <button class="read">Read more</button>
 
   </section>
 
-  <section id="lateryears">
+  <section class="sectiontext">
     <h3>Later Years</h3>
     <p>Tesla lived at the Waldorf Astoria in New York City from 1900 and ran up a large bill. He moved to the St. Regis
       Hotel in 1922 and followed a pattern from then on of moving to a different hotel every few years and leaving
@@ -196,10 +200,10 @@
         the
         funds for Tesla for the rest of his life.</p>
     </span>
-    <button onclick="myFunction()" class="myBtn">Read more</button>
+    <button class="read">Read more</button>
   </section>
 
-  <section id="death">
+  <section class="sectiontext">
     <h3>Death</h3>
     <p>In the fall of 1937 at the age of 81, after midnight one night, Tesla left the Hotel New Yorker to make his
       regular commute to the cathedral and library to feed the pigeons. While crossing a street a couple of blocks from
@@ -225,10 +229,38 @@
         Three Nobel Prize recipients addressed their tribute to “one of the outstanding intellects of the world who
         paved
         the way for many of the technological developments of modern times.</p>
+      <div class="sectionimg"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Urn_with_Teslas_ashes.jpg/800px-Urn_with_Teslas_ashes.jpg"
+          class="sectionimg" alt="Urn with Teslas ashes">
+        <p class="sectionimgcaption">Gold plated urn with Nikola Tesla's ashes, at Nikola Tesla museum, Belgrade</p>
+      </div>
     </span>
-    <button onclick="myFunction()" class="myBtn">Read more</button>
+    <button class="read">Read more</button>
 
   </section>
+  <script>
+    $(document).ready(function () {
+      $(".read").click(function () {
+        $(this).prev().toggle();
+        $(this).siblings('.dots').toggle();
+        if ($(this).text() == 'read more') {
+          $(this).text('read more');
+        }
+        else {
+          $(this).text('read less');
+        }
+      });
+    });
+  </script>
+
+  <a href="https://en.wikipedia.org/wiki/Nikola_Tesla" id="tribute-link" target="_blank">Wikipedia page about Nikola
+    Tesla, for more info. </a>
+
 </body>
+
+
+<footer>
+  <h5>Sources: Wikipedia.com and Britanica.com </h5>
+</footer>
 
 </html>
