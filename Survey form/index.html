@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Preferences Survey</title>
+  <meta name="description" content="Tell us what music you like">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Redressed&family=RocknRoll+One&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <main>
+
+    <h1 id="title">Music Preferences Survey</h1>
+
+
+    <p id="description">Thank you for participating in the survey. Please tell us how you like to enjoy your music</p>
+
+
+
+
+    <form action="" id="survey-form">
+
+      <div class="demo"> <label for="name" id="name-label">Name</label> <br>
+        <input type="text" name="name" id="name" class="formdemo" required placeholder="Enter your name">
+      </div>
+
+
+
+      <div class="demo">
+        <label id="email-label" for="email">Email-Id</label> <br>
+        <input type="email" id="email" class="formdemo" required placeholder="Your Email id">
+      </div>
+
+
+
+      <div class="demo">
+        <label for="age" id="number-label">Age(Optional)</label> <br>
+        <input type="number" name="age" min="10" max="100" id="number" class="formdemo" placeholder="Age">
+      </div>
+
+
+
+      <div id="type">
+        <label for="type" id="typetext">Which term best describes you?</label> <br>
+        <select id="dropdown" required name="type">
+          <option value="" disabled selected name="type">Select from options</option>
+          <option value="nomusic" name="type">I don't like music</option>
+          <option value="rare" name="type">Rare Listener</option>
+          <option value="casual" name="type">Casual Listener</option>
+          <option value="audiophile" name="type">Audiophile</option>
+        </select>
+      </div>
+
+      <div id="radiogroup">
+        <p>What is your primary mode of music consumption?</p>
+
+        <label for="we">
+          <input type="radio" id="we" value="we" name="mconsume">Wired earphones
+        </label>
+
+        <label for="wh">
+          <input type="radio" id="wh" value="wh" name="mconsume">Wired headphones
+        </label>
+
+        <label for="ws">
+          <input type="radio" id="ws" value="ws" name="mconsume">Wired speakers
+        </label>
+
+        <label for="wle">
+          <input type="radio" id="wle" value="wle" name="mconsume">Wireless earphones
+        </label>
+
+        <label for="wlh">
+          <input type="radio" id="wlh" value="wlh" name="mconsume">Wireless headphones
+        </label>
+
+        <label for="wls">
+          <input type="radio" id="wls" value="wls" name="mconsume">Wireless speakers
+        </label>
+
+      </div>
+
+      <div id="checkboxes">
+        <p>Please select the options below to describe your audio setup?</p>
+
+        <label for="mobile">
+          <input type="checkbox" value="mobile" id="mobile">Mobile
+        </label>
+
+        <label for="laptop">
+          <input type="checkbox" value="laptop" id="laptop">Laptop
+
+        </label>
+        <label for="desktop">
+          <input type="checkbox" value="desktop" id="desktop">Desktop
+        </label>
+
+        <label for="dac">
+          <input type="checkbox" value="dac" id="dac">DAC</label>
+        <label for="amp">
+          <input type="checkbox" value="amp" id="amp">Amp</label>
+
+        <label for="open backs">
+          <input type="checkbox" value="openbacks" id="open backs">Open back device
+        </label>
+
+        <label for="closed backs">
+          <input type="checkbox" value="closedbacks" id="closed backs">Closed back device
+        </label>
+
+        <label for="speakers">
+          <input type="checkbox" value="speakers" id="speakers">Speakers
+        </label>
+
+        <label for="noise cancellation">
+          <input type="checkbox" value="noisecancelling" id="noise cancellation">Noise Cancelling
+          device
+        </label>
+      </div>
+
+      <div>
+        <p>Please tell us about the kind of music, artists, and the names of some specific tracks, you like.</p>
+        <textarea name="musictastes" id="musictastes" cols="34" rows="9"></textarea>
+      </div>
+
+      <div id="button1"> <button type="submit" id="submit">Finish</button>
+      </div>
+    </form>
+
+  </main>
+
+
+</body>
+
+</html>

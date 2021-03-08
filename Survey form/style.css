@@ -1,0 +1,139 @@
+:root {
+  font-size: 16px;
+  --ff-primary:'Redressed', sans-serif;
+  --ff-accent:"RocknRoll One";
+    box-sizing: border-box;
+
+    @media (max-width: 700px) {
+        font-size: 10px;
+      }
+    }
+  
+
+
+body{ 
+
+  background: linear-gradient(144deg, rgba(0, 255, 234, 0.685),rgb(129, 248, 252), rgb(46, 96, 129));
+
+}
+
+form {
+  padding: 3rem;
+  background: linear-gradient(144deg, #c478c7, #4E0250);
+  border-radius: 0.36rem;
+  box-shadow: 0.5rem 0.5rem 1rem 0.8rem rgba(0, 0, 0, 0.705);
+}
+
+h1 {
+  font-family: var(--ff-accent);
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  background-color: #4e0250;
+  border-style: groove;
+  border-color: rgba(11, 19, 18, 0.685);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.637), 1.5rem 1.5rem 1.5rem rgba(255, 0, 128, 0.61);
+}
+
+#description {
+  font-family: var(--ff-primary);
+  font-size: 1.5rem;
+}
+
+
+
+#dropdown {
+  margin-top: 0.9rem;
+  margin-left: 0.6rem;
+  width: 93.6%;
+  padding: 0.56rem 1rem;
+}
+
+.demo{
+  padding-bottom: 0.5rem;
+}
+
+
+main {
+  width: 70vmin;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+#email-label, #name-label, #number-label, #typetext{
+  margin-bottom: 0.7rem;
+  font-size: 1.23rem;
+
+}
+
+.formdemo {
+ 
+  margin: 0.7rem;
+  width: 90%;
+  padding: 0.5rem;
+  
+}
+
+p { font-size: 1.3rem;}
+
+label {
+  padding-left: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+#radiogroup {
+  display:flex;
+  flex-direction: column;
+  padding: 0.7rem;
+}
+
+#checkboxes {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+}
+
+#musictastes {
+  margin: 1rem;
+}
+
+button {
+  background-color:rgba(0, 255, 170, 0.795);
+  color:rgb(8, 6, 4);
+  font-family: var(--ff-primary);
+  font-size: 1.5rem;
+  padding: 0.5rem 4rem;
+  border-color: white;
+  border-radius: 0.3rem;
+  border-style: ridge;
+  border-width: 0.2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(146, 145, 60, 0.705);
+}
+
+#button1 {
+  justify-self: end;
+}
+
+@media (max-width:800px) {
+  p, label, input, #email-label, #name-label, #number-label, #typetext {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #musictastes {
+    margin: 0.3rem;
+    width: 79%;
+}
+
+.button1 {
+  text-align: center;
+}
+
+}
